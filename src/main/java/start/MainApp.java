@@ -33,7 +33,6 @@ public class MainApp extends Application {
     @Override
     public void stop(){
         try {
-            System.out.println("end.");
             HibernateUtil.shutdown();
         } catch (Exception e) {
         }

@@ -31,7 +31,6 @@ public class DaoMain{
             if (session != null) {
                 session.flush();
                 session.close();
-                //sessionFactory.close();
             }
         }
     }

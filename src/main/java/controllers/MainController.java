@@ -37,7 +37,6 @@ import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.ss.usermodel.Cell;
 import org.controlsfx.control.textfield.CustomTextField;
 import org.controlsfx.control.textfield.TextFields;
-import start.MainApp;
 import utils.DialogManager;
 
 import java.io.*;
@@ -100,7 +99,6 @@ public class MainController implements Initializable {
     private void initChoiceBox() {
         choiceLang.setItems(FXCollections.observableArrayList("Русский", "English"));
         choiceLang.setValue("Русский");
-        //choiceLang.setDisable(true);
         choiceLang.getSelectionModel().selectedIndexProperty().addListener(new ChangeListener<Number>() {
             @Override
             public void changed(ObservableValue ov, Number oldValue, Number newValue) {
